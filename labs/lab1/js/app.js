@@ -1,5 +1,5 @@
-var a = 6;
+var a = 7;
 var b = 7;
 
-var c = a + b;
+var c = b % a;
 console.log(c);
