@@ -14,11 +14,11 @@ function draw(){
 
     //draw grass
     fill(114, 237, 114)
-    rect(0,250,800,300)
+    rect(0,249,800,300)
 
     //draw earth
     fill(99, 38, 0)
-    rect(0,550,800,50)
+    rect(0,548,800,51)
 
     //draw the stick of a flower
     stroke(0)
