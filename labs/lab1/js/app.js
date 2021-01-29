@@ -20,7 +20,7 @@ function draw(){
     fill(99, 38, 0)
     rect(0,548,800,51)
 
-    //draw the stick of a flower
+    //draw the stick of a rose
     stroke(0)
     strokeWeight(0.5)
     fill(179, 76, 12)
@@ -32,7 +32,7 @@ function draw(){
     triangle(379,460,355,460,379,470)
     triangle(391,560,410,575,391,570)
 
-    //draw leaves of a flower
+    //draw leaves of the rose
     let leafY = 280
 
     fill(12, 179, 51)
