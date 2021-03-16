@@ -35,7 +35,7 @@ function draw() {
         //add to the end of the array 
         PosY.push(0)
 
-        if (PosY.length > 50){
+        if (PosY.length > 1000){
             
             //remove a position Y from the beginning of the array 
             PosY.length.shift();
