@@ -8,6 +8,7 @@ function setup(){
 
 
 function draw(){
+    //set background color
     background(0)
    
     //returns array and remove item from beginning of an array
