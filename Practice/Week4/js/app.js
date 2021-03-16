@@ -57,7 +57,7 @@ function setup() {
     }
 }*/
 
-let positions = [ 0,0,0,0 ];
+/*let positions = [ 0,0,0,0 ];
 
 function setup(){
     createCanvas(400, 300);
@@ -79,4 +79,64 @@ function draw() {
        
         circle(positions[i], 150, 30);
     }
+}*/
+
+/*let h = 50;
+let kl = 100; //offset is bett ethan displacement(centering)
+let pol = 1;
+let r = 10;
+let j = 10;
+let i = 0; //counter for the draw loop
+
+
+function setup() {
+  createCanvas(400, 400)
+}
+//draws a sine curve
+
+
+//For fun : animate it! do you know how maybe we can animate this? 
+//I tried to run it and it says there's an syntax error 
+//I saw it
+function draw() {
+  background(220)   //background commented out
+  fill(255, 0, 0)
+  let zf = Math.sin(i * pol) * r;   //sin(x) x=i*pol  zf is y value
+  circle(i * j + h, zf + kl, 20);
+
+  i++ //will incriment for the draw loop
+  if(i == 50) //restarrts the sine wave
+    i = 0
+  
+}*/
+
+
+let oos = [ 15, 22, 10, 5 ];
+let ahs = [ "#ed1a80", "#fcba03", "#ed1a80", "#fcba03" ]
+
+function setup() {
+  createCanvas(400, 400);
+
+}
+
+function draw() {
+
+  background(50);
+  translate(200,200);
+
+  if (mouseIsPressed) {
+    oos.push(Math.random() * 25);
+
+    if(Math.random() < .5 ) {
+      ahs.push("#fcba03");
+    } else {
+      ahs.push("#ed1a80");
+    }
+  }
+
+  for( let i = 0; i < oos.length; i++) {
+    fill(ahs[i]);
+    circle(sin(i) * 40, cos(i)* 40, oos[i]);
+  }
+
 }
