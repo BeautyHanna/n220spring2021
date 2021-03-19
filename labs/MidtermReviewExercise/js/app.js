@@ -3,6 +3,7 @@ function setup(){
 }
 
 function draw(){
+    background(50)
 
-    rect(x, y, w, h, [tl], [tr], [br], [bl])
+    rect(550,mouseY,30,50)
 }
