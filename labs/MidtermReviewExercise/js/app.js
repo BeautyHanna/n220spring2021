@@ -6,8 +6,8 @@ let rectX = 770;
 let rectW = 30;
 let rectH = 50;
 
-let SpeedX = -3;
-let SpeedY = 0;
+let SpeedX = 3;
+let SpeedY = 3;
 
 
 function setup(){
@@ -25,7 +25,7 @@ function draw(){
     circleY = circleY + SpeedY;
     
     
-    /*if (circleY > 600){
+    if (circleY > 600){
         SpeedY = -3;
     } else if (circleX > 800){
         SpeedX = -3;
@@ -33,7 +33,7 @@ function draw(){
         SpeedY = 3;
     } else if (circleX < 0){
         SpeedX = 3;
-    }*/
+    }
   
     /*if(collideRect(circleX, circleY, rectX, mouseY, rectW, rectH))
   {
@@ -43,14 +43,14 @@ function draw(){
     
   }*/
 
-  if(circleX < 0 ) {
+  /*if(circleX < 0 ) {
     SpeedX = SpeedX * -1;
     
   }
 
   if(circleX > width){
       SpeedX = SpeedX * -1;
-  }
+  }*/
 
   
   //if(circleY == mouseY /*||circleY > height */) {
