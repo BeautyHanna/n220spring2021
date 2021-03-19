@@ -92,6 +92,8 @@ function draw() {
   collideWall();
   
 }
+
+
 function collideWall(){
   
   if(circleX < 0 || circleX > width-25 || circleX < 25) {
