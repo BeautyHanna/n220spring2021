@@ -67,7 +67,7 @@ let circleY = 0;
 let xSpeed = 3;
 let ySpeed = 3;
 let rectX = 0;
-let rectY= 450;
+
 let rectW = 500;
 let rectH = 50;
 
@@ -88,7 +88,7 @@ function draw() {
   circleY = circleY + ySpeed;
 
   
-  rect(rectX,rectY,rectW,rectH);
+  rect(rectX, rectY = mouseY ,rectW,rectH);
   collideWall();
   
 }
