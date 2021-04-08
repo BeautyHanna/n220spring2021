@@ -1,86 +1,60 @@
-let circleX =400;
-let circleY = 300; 
+var circles = [
+  { x: 50, r: 30},
+  { x: 80, r: 30},
+  { x: 120, r: 30},
+  { x: 190, r: 30},
+  { x: 230, r: 30},
+  { x: 380, r: 30},
+  { x: 450, r: 30},
+  { x: 540, r: 30},
+  { x: 680, r: 30},
+  { x: 750, r: 30}
+  
+]
 
-let rectX = 770;
-
-let rectW = 30;
-let rectH = 50;
-
-let SpeedX = 3;
-let SpeedY = 3;
 
 
 function setup(){
-    createCanvas(800, 600);
+createCanvas(800, 400)
+
+
 }
 
 function draw(){
-    background(50);
+  background(0)
 
-    rect(rectX,mouseY,rectW,rectH);
-
-   circle(circleX, circleY, 50);
-
-    circleX = circleX + SpeedX;
-    circleY = circleY + SpeedY;
-    
-    
-    if (circleY > 600){
-        SpeedY = -3;
-    } else if (circleX > 800){
-        SpeedX = -3;
-    } else if (circleY < 0){
-        SpeedY = 3;
-    } else if (circleX < 0){
-        SpeedX = 3;
-    }
   
-    /*if(collideRect(circleX, circleY, rectX, mouseY, rectW, rectH))
-  {
-    SpeedY = SpeedY * -1;
-    SpeedX = SpeedX * +1;
-    console.log(collideRect)
-    
-  }*/
+ 
 
-  /*if(circleX < 0 ) {
-    SpeedX = SpeedX * -1;
-    
+  for( var i = 0; i < circles.length; i++){
+      circle(circles[i].x, circleY = mouseY, circles[i].r);
+
+      if (mouseX > circles[i].x -5 && mouseX < circles[i].x + 5){
+          circles[i].r = circles[i].r + 0.1
+         // fill(Math.random() *255);
+
+         
+      }
+      if (mouseX < circles[i].x -5  ){
+          circles[i].r = circles[i].r - 0.1
+          
+          
+      }
+      
+      
+      
   }
 
-  if(circleX > width){
-      SpeedX = SpeedX * -1;
-  }*/
 
-  
-  //if(circleY == mouseY /*||circleY > height */) {
-    //SpeedY = SpeedY * -1;
-    
- // }
-
-  /*if(collideRect(circleX, circleY, rectX, mouseY, rectW, rectH))
-  {
-    
-    SpeedX = SpeedX * +1;
-    SpeedY = SpeedY * -1;
-    
-  }*/
+  //mousePressed()
+  //mouseReleased()
+ 
 }
 
-/*function collideRect(circleX, circleY, rectX, mouseY, rectW, rectH) {
+/*function mousePressed(){
+  mouseY = mouseY + 1;
+}
 
-     var colliding = false;
-
-     if(circleX > rectX && circleX < rectX + rectW) {
-
-         if(circleY > mouseY && circleY < mouseY + rectH) {
-
-               return true;
-
-         }
-
-    }
-
-    return false;
-
+function mouseReleased(){
+  mouseY = mouseY
 }*/
