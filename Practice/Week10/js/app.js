@@ -6,10 +6,8 @@ let books = ["Harry Potter", "Hunger Games", "Lord of The Rings", "Narnia"]
 })
 }*/
 
-function findBook(){
-    document.getElementById("Title").innerHTML = books.find(function (book){
-
-        return book == ["];
-    })
+function findBook() {
+  document.getElementById("Title").innerHTML = books.find(function (book){;
+  return book == "Harry Potter";
+})
 }
-
