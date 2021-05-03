@@ -5,7 +5,7 @@ var side = 100
 
 GreenSquare.style.backgroundColor = "#7bc990";
 GreenSquare.style.width = side + "px";
-GreenSquare.style.height = side + "px";
+GreenSquare.style.height = side + "px"
 
 function IncreaseSize() {
        
