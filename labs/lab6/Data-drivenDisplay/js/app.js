@@ -20,10 +20,13 @@ function setup(){
 
     createCanvas(800, 800)
 
+    
+}
+
+function draw() {
     iPhone()
     Camera()
 }
-
 function iPhone (){
     fill (myPhone.color)
     rect(myPhone.xPos, myPhone.yPos, myPhone.width, myPhone.height, myPhone.phoneRadius )
