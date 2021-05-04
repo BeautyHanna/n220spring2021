@@ -18,6 +18,7 @@ function draw(){
     background(0);
    
     //Draw ball at 5 pixel speed at x & y positions
+    fill(myBall.C)
     circle (myBall.X, myBall.Y, myBall.R)
     myBall.X = myBall.X + myBall.SX;
     myBall.Y = myBall.Y + myBall.SY;
