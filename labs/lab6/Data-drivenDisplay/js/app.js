@@ -10,10 +10,9 @@ let myPhone = {
 
 let iPhoneCamera = {
     color: "#000000" ,
-    xPos: 210,
-    yPos: 210,
-    radius: 20,
-
+    xPos: 240,
+    yPos: 240,
+    r: 40,
 }
 
 
@@ -22,6 +21,7 @@ function setup(){
     createCanvas(800, 800)
 
     iPhone()
+    Camera()
 }
 
 function iPhone (){
@@ -30,8 +30,11 @@ function iPhone (){
     
 
 }
+function Camera() {
 
-function iPhoneCamera(){
-
+    fill(iPhoneCamera.color)
+    circle(iPhoneCamera.xPos,iPhoneCamera.yPos,iPhoneCamera.r)
+    circle(iPhoneCamera.xPos,iPhoneCamera.yPos + 50,iPhoneCamera.r)
+    circle(iPhoneCamera.xPos + 40,iPhoneCamera.yPos + 25,iPhoneCamera.r)
 
 }
